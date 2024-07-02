@@ -1,0 +1,1243 @@
+/* Color Pallete:
+#fdfdfd
+#1e90ff
+#383838a
+#000000 */
+/* custom-font import (MonumentExtended-Regular) */
+
+@font-face {
+  font-family: monument;
+  src: url("fonts/MonumentExtended-Regular.otf");
+}
+
+/* custom-font import (MonumentExtended-Ultrabold) */
+@font-face {
+  font-family: monument-bold;
+  src: url("fonts/MonumentExtended-Ultrabold.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  color: #dfdcd8;
+}
+
+body {
+  background: rgb(19, 16, 17);
+  height: 100%;
+}
+
+a {
+  color: #dfdcd8;
+}
+
+.body-container {
+  position: relative;
+}
+
+/* Background Image */
+.bg-img {
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(19, 16, 17)),
+    url("images/level-days.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(19, 16, 17))
+    ),
+    url("images/level-days.jpg");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(19, 16, 17)),
+    url("images/level-days.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(19, 16, 17)
+    ),
+    url("images/level-days.jpg");
+  height: 700px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  opacity: 0.3;
+}
+
+.monstercat-logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 60px;
+  top: 20px;
+}
+
+/* Body Content */
+.main-content {
+  position: absolute;
+}
+
+img#logo-nav {
+  width: 50px;
+  height: 50px;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* navbar */
+nav {
+  margin: 24px 0;
+  padding: 0 2% 0 44px;
+  width: 100%;
+  position: fixed;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* hamburger icon */
+iconify-icon#hamburger {
+  font-size: 25px;
+  margin-right: 10%;
+}
+
+/* sidebar sticky social icon */
+.fa {
+  font-size: 18px;
+  padding: 3px;
+}
+
+/* .fa:hover {
+  font-size: 19px;
+  transition: 0.3s ease;
+} */
+
+.social .social-set {
+  display: grid;
+  grid-gap: 20px;
+  text-align: center;
+  position: fixed;
+  /* left: 95.2%; */
+  right: 2%;
+  padding: 5px;
+  margin-top: 10%;
+}
+
+.monstercat-player {
+  width: 2.2rem;
+}
+
+/* hero-content */
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 15%;
+}
+
+.hero-container .left-box img {
+  width: 90%;
+  height: 90%;
+}
+
+.left-box h3 {
+  font-style: italic;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+span#song-instinct {
+  color: rgb(98, 156, 132);
+}
+
+.info-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+h1.title-song {
+  font-family: "monument", sans-serif;
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0, 0);
+  color: #00000000;
+  -webkit-text-stroke: 1px white;
+  font-weight: 500;
+}
+
+h2.song-artist {
+  font-family: "monument", sans-serif;
+  font-weight: 500;
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.left-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 5px;
+}
+
+.right-box {
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+.artist-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 30px;
+  margin: 50px 0;
+}
+
+.btn-play {
+  padding: 1rem 1.4rem;
+  margin-right: 10px;
+  font-family: "monument", sans-serif;
+  background-color: #50a584;
+  font-size: 14px;
+  border: 2px solid #50a584;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn-play:hover {
+  background-color: white;
+  color: rgb(19, 16, 17);
+  border: 2px solid #f6f6f6;
+}
+
+.fa-play,
+.fa-share-nodes {
+  margin-right: 8px;
+}
+
+.btn-share {
+  padding: 1rem 1.1rem;
+  font-family: "monument", sans-serif;
+  background: transparent;
+  font-size: 14px;
+  border: 2px solid #f1f1f1;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn-share:hover {
+  background: #f6f6f6;
+  color: rgb(19, 16, 17);
+  border: 2px solid #f6f6f6;
+  opacity: 1;
+}
+
+.btn-share:hover i,
+.btn-play:hover i {
+  color: black !important;
+}
+
+/* streaming platform deck */
+.stream-deck {
+  /* margin: 150px 300px 0 300px; */
+  width: 72%;
+  margin-top: 100px;
+  margin: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 13%;
+}
+
+.stream-deck h1,
+.track-list h1,
+.other-release h1 {
+  font-family: "monument", sans-serif;
+  font-size: 45px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.stream-icon {
+  display: table;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 3% 0;
+  border-collapse: collapse;
+  /* position: relative; */
+  position: static;
+}
+
+.row {
+  display: table-row;
+  position: static;
+  /* position: relative; */
+}
+
+.deck-icon {
+  display: table-cell;
+  border: 2px solid #f1f1f1;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.deck-icon.player {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+/* Track list */
+h1.track-header {
+  margin-bottom: 50px;
+}
+
+.track-list {
+  width: 72%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 6%;
+}
+
+.music-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.music-tab .music-tab-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 27px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.music-tab .music-tab-left .tab-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.music-tab-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.music-tab-right .tab-time {
+  margin-right: 50px;
+}
+
+.artist {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tab-icon a {
+  font-size: 23px;
+}
+
+/* other albums suggestion */
+.other-release {
+  width: 72%;
+  margin: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.album-list {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.album-list .album-img {
+  width: 10vw;
+  height: auto;
+  min-width: 140px;
+}
+
+.album-list h2 {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-family: "monument", sans-serif;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.album-list .artist {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  display: block;
+}
+
+.album-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 72%;
+}
+
+/* MUSIC VIDEO TAB(Only mobile version) */
+.music-video {
+  display: none;
+}
+
+/* Company description */
+.company-description {
+  width: 72%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 1%;
+  padding: 3% 0;
+  border-top: 2px solid #fdfdfd;
+  border-bottom: 2px solid #fdfdfd;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.leftmost ul,
+.middle ul,
+.rightmost ul {
+  font-size: 18px;
+  font-family: "monument", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.news a {
+  color: #716f6d !important;
+}
+
+.news-description {
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  line-height: 28px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.email input {
+  width: 100%;
+  background-color: Transparent;
+  border-bottom: solid 1px #3e3b3c;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.email button {
+  padding: 15px 20px;
+  background-color: Transparent;
+  border-bottom: solid 1px #3e3b3c;
+}
+
+.email button:hover {
+  background-color: red;
+}
+
+.email input:focus {
+  outline: 0;
+}
+
+.leftmost li,
+.middle li {
+  margin-bottom: 10px;
+}
+
+.company-description ul {
+  width: 300px;
+}
+
+/* Footer */
+.footer {
+  width: 72%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.left-footer-box {
+  width: 50%;
+}
+
+.right-footer-box {
+  width: 50%;
+}
+
+.right-footer-box li {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.right-footer-box ul {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.footer-text {
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+}
+
+/* footer-text */
+.footer-acknowledgement {
+  width: 46%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 30px;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  margin-top: 3%;
+}
+
+div.lower {
+  margin-top: 20px;
+}
+
+/* collapse sidebar */
+.sidebar-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 4%;
+  padding: 3% 4% 0 7%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.side-bar {
+  background: black;
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transition-property: right;
+  -o-transition-property: right;
+  transition-property: right;
+}
+
+.side-bar.active {
+  right: 0;
+}
+
+.side-bar .menu {
+  width: 100%;
+  height: 62%;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-bottom: 1rem;
+  overflow-y: scroll;
+  font-family: "monument", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.side-bar .menu .item {
+  /* position: relative; */
+  cursor: pointer;
+}
+
+.side-bar .menu .item a {
+  color: #fff;
+  font-size: 1vw;
+  display: block;
+  line-height: 70px;
+}
+
+.side-bar .menu .item a .dropdown {
+  margin: 20px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu {
+  display: none;
+}
+
+.side-bar .menu .item .sub-menu .sub-item {
+  line-height: 150%;
+  margin-bottom: 1rem;
+}
+
+.side-bar .menu .item .sub-menu a {
+  margin-left: 2rem;
+  font-size: 0.8vw;
+  color: #999999;
+  width: 80%;
+}
+
+.side-bar .menu .item .sub-menu a:hover {
+  color: #f1f1f1;
+}
+
+.rotate {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.close-btn {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  right: 0;
+  cursor: pointer;
+  margin-right: 10%;
+  margin-bottom: 0.6rem;
+}
+
+.menu-btn {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 2.6%;
+  cursor: pointer;
+  right: 0;
+}
+
+.sidebar-nav-icon {
+  width: 100%;
+  margin-left: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 1rem;
+  margin-top: 4rem;
+  font-size: 1rem;
+}
+
+.sidebar-nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sign-btn {
+  padding: 10px;
+  background: transparent;
+  font-size: 0.8vw;
+  width: auto;
+  font-family: "monument", sans-serif;
+}
+
+.sign-btn.sign-in-btn {
+  border: 2px solid #f6f6f6;
+  padding: 10px 25px;
+}
+
+.sign-btn.sign-in-btn:hover {
+  background: #f1f1f1;
+  color: #000;
+  cursor: pointer;
+}
+
+.sign-btn.sign-up-btn span {
+  font-weight: 800;
+}
+
+.fa-times {
+  font-size: 30px;
+}
+
+.sidebar-logo img {
+  width: 90%;
+  height: auto;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* TABLET Rsponsive design */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-content nav {
+    background: rgb(4, 7, 7);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .social .social-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 95%;
+    right: 30%;
+  }
+
+  .hero-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 90vw;
+    margin-top: 15%;
+  }
+
+  .left-box {
+    width: 90vw;
+    height: auto;
+  }
+
+  .artist-pic {
+    display: none;
+  }
+
+  .hero-container .left-box img {
+    width: 100%;
+  }
+
+  h2.song-artist {
+    margin-top: 0;
+  }
+
+  .button-play {
+    margin-top: 25px;
+  }
+
+  .btn-play,
+  .btn-share {
+    padding: 1.3rem 3rem;
+    font-size: 20px;
+  }
+
+  img#logo-nav {
+    margin-left: 10px;
+  }
+
+  .stream-deck,
+  .track-list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 85vw;
+  }
+
+  .other-release {
+    width: 85vw;
+  }
+
+  .monstercat-player {
+    padding-top: 7px;
+  }
+
+  .album-list .album-img {
+    width: 10vw;
+    height: auto;
+    min-width: 11vw;
+  }
+
+  .company-description {
+    width: 85vw;
+  }
+
+  .company-description ul {
+    width: 25vw;
+    font-size: 2vw;
+  }
+
+  .news-description {
+    line-height: 20px;
+    font-size: 11px;
+  }
+
+  .footer-acknowledgement {
+    width: 80vw;
+  }
+
+  .footer {
+    width: 85vw;
+  }
+
+  .footer-text {
+    width: 300px;
+    font-size: 0.6rem;
+  }
+
+  .side-bar {
+    width: 50%;
+  }
+
+  .side-bar .menu .item a {
+    font-size: 25px;
+  }
+
+  .side-bar .menu .item .sub-menu a {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .sidebar-nav-icon {
+    font-size: 24px;
+  }
+
+  .sign-btn.sign-in-btn {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+  .sign-btn.sign-up-btn {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+
+  h1.title-song {
+    font-size: 2rem;
+  }
+
+  h2.song-artist {
+    font-size: 1.6rem;
+  }
+
+  .stream-deck h1,
+  .track-list h1,
+  .other-release h1 {
+    font-size: 35px;
+  }
+
+  .main-content {
+    top: -1px;
+  }
+}
+
+/* Mobile Responsive design */
+
+@media only screen and (max-width: 480px) {
+  body {
+    background: rgb(0, 0, 0);
+    height: 100%;
+  }
+
+  .bg-img {
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0))
+    );
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0));
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0)
+    );
+  }
+
+  .main-content nav {
+    background: black;
+    margin: 0;
+    padding: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  img#logo-nav {
+    width: 30px;
+    height: auto;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .menu-btn {
+    position: static;
+  }
+
+  .main-content {
+    top: -1px;
+  }
+
+  .hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .left-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 150px;
+    margin: 2.5rem 0 2rem;
+  }
+
+  .hero-container .left-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -8rem;
+  }
+
+  .left-box h3 {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    font-size: 0.9rem;
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
+    writing-mode: horizontal-tb;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    z-index: -1;
+    font-weight: 500;
+  }
+
+  .right-box {
+    margin: 0;
+    width: 100%;
+  }
+
+  h1.title-song {
+    -webkit-text-stroke: 0px;
+    color: #f6f6f6;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+
+  h2.song-artist {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  .artist-pic {
+    display: none;
+  }
+
+  .button-play {
+    margin-top: 1.2rem;
+  }
+
+  .btn-play,
+  .btn-share {
+    padding: 1rem 0.8rem;
+  }
+
+  .stream-deck {
+    width: 90%;
+    margin-top: 4rem;
+  }
+
+  .stream-deck h1,
+  .track-list h1,
+  .other-release h1,
+  .music-header {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-family: "monument", sans-serif;
+    font-weight: 500;
+  }
+
+  .deck-icon,
+  .deck-icon.player {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  .player span {
+    font-size: 0.7rem;
+    letter-spacing: 0;
+  }
+
+  .track-list {
+    width: 90%;
+    margin-top: 4rem;
+  }
+
+  h1.track-header {
+    margin-bottom: 1rem;
+  }
+
+  .music-tab .music-tab-left {
+    gap: 1.5rem;
+  }
+
+  .music-tab-right .tab-time,
+  .music-tab-right .share-icon {
+    margin-right: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .other-release {
+    display: none;
+  }
+
+  .music-video {
+    display: block;
+    width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 4rem;
+  }
+
+  .music-header {
+    margin-bottom: 1rem;
+  }
+
+  .company-description {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-weight: normal;
+    margin: 6rem auto 0;
+    padding: 4rem 0;
+  }
+
+  .company-description ul {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "monument", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .news-description {
+    margin-top: 10px;
+  }
+
+  .rightmost ul {
+    margin-top: 2.5rem;
+  }
+
+  .footer {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    margin-top: 4rem;
+  }
+
+  .right-footer-box li {
+    margin: 0.4rem;
+  }
+
+  p.footer-text {
+    width: 200%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .right-footer-box ul {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .footer-acknowledgement {
+    width: 90%;
+    font-size: 0.7rem;
+    margin-top: 3rem;
+  }
+
+  /* collapsible sidebar */
+  .side-bar {
+    width: 100%;
+    z-index: 0;
+  }
+
+  .side-bar .menu .item a {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+  }
+
+  .side-bar .menu {
+    height: 55%;
+    margin-left: 1.5rem;
+  }
+
+  .sidebar-nav-icon,
+  .sidebar-nav-button {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .sidebar-header {
+    padding: 0;
+  }
+
+  .side-bar .menu .item .sub-menu .sub-item {
+    font-size: 0.6rem;
+    width: 100%;
+  }
+
+  .sign-btn {
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+  }
+}
